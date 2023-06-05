@@ -11,14 +11,16 @@
 <body>
  <h1>Core GPA Calculator</h1>
   <form>
+   
+   <!-- Overall GPA input field -->
    <label for="overallGPA">Overall GPA:</label>
    <input type="number" step="0.01" id="overallGPA" name="overallGPA"><br><br>
 
-
+   <!-- last 30 credits GPA input field -->
    <label for="last30CreditsGPA">Last 30 Credits GPA:</label>
    <input type="number" step="0.01" id="last30CreditsGPA" name="last30CreditsGPA"><br><br>
 
-
+   <!-- accounting 200 grade drop down list -->
    <label for="accounting200Grade">Accounting 200 Grade:</label>
    <select id="accounting200Grade" name="accounting200Grade">
        <option value="A">A</option>
@@ -35,7 +37,7 @@
        <option value="E">E</option>
    </select><br><br>
 
-
+   <!-- IS 201 grade drop down list -->
    <label for="is201Grade">IS 201 Grade:</label>
    <select id="is201Grade" name="is201Grade">
        <option value="A">A</option>
@@ -52,7 +54,7 @@
        <option value="E">E</option>
    </select><br><br>
 
-
+   <!-- IS 303 grade drop down list -->
    <label for="is303Grade">IS 303 Grade:</label>
    <select id="is303Grade" name="is303Grade">
        <option value="A">A</option>
@@ -69,11 +71,11 @@
        <option value="E">E</option>
    </select><br><br>
 
-
+   <!-- Essay score input field -->
    <label for="essayScore">Essay Score (0-4):</label>
    <input type="number" step="1" id="essayScore" name="essayScore" min="0" max="4"><br><br>
-
-
+   
+   <!-- calculate GPA button -->
    <button type="button" onclick="calculateGPA()">Calculate GPA</button>
    <label id="calculatedGPA"></label>
  </form>
